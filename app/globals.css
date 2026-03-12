@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary-red: #E63946;
+  --color-lakeside-blue: #A8DADC;
+  --color-cream: #F8F9FA;
+  --color-terracotta: #E9C9B1;
+  --color-charcoal: #1D1D1D;
+  --color-white: #FFFFFF;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary-red);
+  --color-accent: var(--color-lakeside-blue);
+  --color-background: var(--color-cream);
+  --color-foreground: var(--color-charcoal);
+  --font-sans: var(--font-oswald);
+  --font-serif: var(--font-bebas);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-oswald), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bebas), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
